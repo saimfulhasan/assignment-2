@@ -4,15 +4,19 @@ body{
 main{
     background-color: white;
     margin: 30px 65px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 h1{
     font-size: 70px;
     color: white;
     margin-bottom: 10px;
 }
-p{
+.first-p{
     color: white;
 }
+
 .container-button{
     color: white;
     background-color: red;
@@ -64,4 +68,17 @@ p{
 .section-2-button a{
     text-decoration: none;
     color: black;  
+}
+
+
+/* .section-2-container{
+    display: flex;
+} */
+.section-1-items-2{
+    display: grid;
+    grid-template-columns: auto;
+}
+.player-card{
+    display: flex;
+    flex-direction: column;
 }
