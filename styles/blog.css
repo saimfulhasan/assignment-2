@@ -92,6 +92,10 @@ form{
     /* border: 1px solid green; */
     border-radius: 10px;
 }
+.hovering-button:hover{
+    background-color: red;
+    color: white;
+}
 /* section-2-items-1 ends */
 
 
@@ -104,6 +108,11 @@ form{
     border-radius: 5px;
     box-shadow: 2px 2px 12px #dadee2;
     /* border: 2px solid red; */
+}
+.icons {
+    display: flex;
+    gap: 2rem;
+    opacity: 0.75;
 }
 .player-card img{
     width: 100%;
@@ -159,19 +168,36 @@ ul{
 
 @media only screen and (max-width: 688px) {
     .section-1-container{
-        background-color: aqua;
-        grid-template-columns: repeat(1 , 1fr);
-        /* width: 100%; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0 0 1rem 0;
+        padding: 0.5rem 1rem;
+        width: 100%;
+        height: 1047px;
+    }
+    
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
     }
     .section-2-container{
         grid-template-columns: repeat(1, auto);
     }
     form{
-        grid-template-rows: repeat(1, 1fr);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .section-2-items-2{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
         gap: 10px;
         width: 100%;
     }
